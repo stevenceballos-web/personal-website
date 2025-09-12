@@ -1,0 +1,204 @@
+<!--
+File: about.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- This is the head of the webpage. It includes the title,
+     the charset declaration, and the link to the .css file-->
+    <head>
+        <meta charset="utf-8">
+        <title>About</title>
+        <style>
+            H1.center { text-align: center;}
+            H2.left { text-align: left;}
+            H3.right {text-align: right;}
+        </style>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- This is the beginning of the body. Here we have a header 
+        at the top of the page, along with an image. The image also has horizontal lines represented by <hr> -->
+        <hr>
+        <h1 class="center">Steven's Website</h1>
+        <img src="images/peakpx.jpg"
+             alt="Banner"
+             title="Banner"
+             width="1500"
+             height="150"
+             class="center"
+        />
+        <hr>
+        <!-- Here are the hyperlinks, at the top of the page. Set up using the classes row and column to have them side by side-->
+        <div class="row">
+            <div class="column2">
+                <a href="index.html">Home</a> 
+            </div>
+            <div class="column2">
+                <a href="about.html">About</a> 
+            </div>
+            <div class="column2">
+                <a href="contact.html">Contact</a> 
+            </div>
+        </div>       
+        <!-- Beginning of the paragraph "About Me"-->     
+        <h2 class="left">About Me</h2>
+        <div>
+        <!--Image is declared below-->    
+        <div style="float: right">    
+           <img src="images/about.jpg"
+                alt="about"
+                width="300"
+                height="300"
+                class="right"
+           >
+        </div>   
+        <div>  
+           <!-- Text is below-->  
+           <p>
+           I am a computer science masters student here at UML. I also took my undergraduate degree here and<br>
+           graduated in 2023. I started my graduate studies in Fall 2024 and I am currently in my last semester of <br>
+           courses. This semester I am taking natural language processing, internet and web systems, and evaluation<br>
+           of human computer interaction.
+           </p>
+        </div>
+        </div>
+        <hr>
+        <!-- Beginning of the Hobbies section. Uses classes for aligning the images and text--> 
+        <h1 class="center">Hobbies</h1>
+        <h2 class="left">Sports</h2>
+        <div>
+        <div style="float: left">    
+           <img src="images/bball.JPEG"
+                alt="bball"
+                width="300"
+                height="300"
+                class="left"
+           >
+        </div>
+        <div style="float: left">    
+            <video width="640" height="360" controls>
+            <source src="images/golf.MOV" type="video/MOV">
+            Your browser does not support the video tag.
+            </video>
+        </div>   
+        <div>  
+         <p> 
+           I really enjoy to play and watch the sports listed below.
+         </p>  
+           <!-- Below is the first unordered list. The ul belongs to the center class which gives it a border that is centered.-->
+           <ul class="center">
+            <li>Basketball</li>
+            <li>Football(both kinds)</li>
+            <li>Pickleball</li>
+            <li>Golf</li>
+            <li>Baseball</li>
+            <li>Swimming</li>
+            <li>Skiing</li>
+           </ul>
+        </div>
+        </div>
+        <!-- Replica of the previous section, an unordered list with an image and text-->
+        <h2 class="left">Hiking</h2>
+        <div>
+        <div style="float: left">    
+            <img src="images/rockymnt.jpg"
+                 alt="rockymnt"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div style="float: left">    
+            <img src="images/bryce.jpg"
+                 alt="bryce"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div>
+            <p>
+            I really enjoy hiking trails and mountains. Recently took a trip to the<br>
+            rockies and saw some beautiful scenery! Here are some national parks and mountains I have visited<br>
+            </p>
+            <!--Unordered list starts here-->
+            <ul class="center">
+             <li>Rocky mountain national park, CO</li>
+             <li>Grand canyon national park, AZ</li>
+             <li>Zion national park, UT</li>
+             <li>Bryce canyon national park, UT</li>
+             <li>Acadia national park, ME</li>
+             <li>Pikes Peak, CO</li>
+             <li>Mount Lemmon, AZ</li>   
+            </ul>
+        </div>
+        </div>
+        <h2 class="left">Traveling</h2>
+        <div>
+        <div style="float: left">    
+            <img src="images/alaska.JPG"
+                 alt="alaska"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div style="float: left">    
+            <img src="images/sanjuan.jpg"
+                 alt="sanjuan"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div>
+            <p>
+            I also enjoy traveling! Here are some places I have been to.<br>
+            </p>
+            <!--Unordered list starts here-->
+            <ul class="center">
+             <li>Fairbanks, AK</li>
+             <li>Montreal, CAN</li>
+             <li>Santo Domingo, DR</li>
+             <li>San Juan, PR</li>
+             <li>Yucatan, MEX</li>
+             <li>Omaha, NE</li>
+             <li>Cincinnati, OH</li>   
+            </ul>
+        </div>
+        </div>
+         <div style="float: left">    
+            <img src="images/bosceltics.png"
+                 alt="bosceltics"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div style="float: left">    
+            <img src="images/fall.webp"
+                 alt="fall"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div>
+            <p>
+            To finish up, heres a list of some of my favorite things.<br>
+            </p>
+            <!--Unordered list starts here-->
+            <ul class="center">
+             <li>Favorite color: Orange</li>
+             <li>Favorite animal: Giraffe</li>
+             <li>Favorite food: Lasagna</li>
+             <li>Favorite season: Fall</li>
+             <li>Favorite team: Celtics</li>
+             <li>Favorite activity: Take a nap</li>
+             <li>Favorite drink: Water</li>   
+            </ul>
+        </div>
+        </div>
+        <hr>   
+    </body>
+</html>
