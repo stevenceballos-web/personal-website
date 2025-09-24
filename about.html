@@ -25,20 +25,13 @@ File: about.html
              title="Banner"
              width="1500"
              height="150"
-             class="center"
         />
         <hr>
         <!-- Here are the hyperlinks, at the top of the page. Set up using the classes row and column to have them side by side-->
-        <div class="row">
-            <div class="column2">
-                <a href="index.html">Home</a> 
-            </div>
-            <div class="column2">
-                <a href="about.html">About</a> 
-            </div>
-            <div class="column2">
-                <a href="contact.html">Contact</a> 
-            </div>
+        <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
         </div>       
         <!-- Beginning of the paragraph "About Me"-->     
         <h2 class="left">About Me</h2>
@@ -49,16 +42,21 @@ File: about.html
                 alt="about"
                 width="300"
                 height="300"
-                class="right"
+                class="left"
            >
         </div>   
         <div>  
            <!-- Text is below-->  
            <p>
-           I am a computer science masters student here at UML. I also took my undergraduate degree here and<br>
-           graduated in 2023. I started my graduate studies in Fall 2024 and I am currently in my last semester of <br>
-           courses. This semester I am taking natural language processing, internet and web systems, and evaluation<br>
-           of human computer interaction.
+           I am a computer science masters student here at UML.<br> 
+           I also took my undergraduate degree here and<br>
+           graduated in 2023. I started my graduate<br>
+           studies in Fall 2024 and I am currently in my last semester of <br>
+           courses. This semester I am taking<br> 
+           natural language processing, internet and web systems, and evaluation<br>
+           of human computer interaction.<br> 
+           I have many interests and hobbies listed below!<br>
+           See if we share anything in particular.
            </p>
         </div>
         </div>
@@ -67,28 +65,28 @@ File: about.html
         <h1 class="center">Hobbies</h1>
         <h2 class="left">Sports</h2>
         <div>
-        <div style="float: left">    
+        <div style="float: right">    
            <img src="images/bball.JPEG"
                 alt="bball"
                 width="300"
                 height="300"
-                class="left"
+                class="bounce-hover"
            >
         </div>
-        <div style="float: left">    
+        <div style="float: right">    
            <img src="images/golf.PNG"
                 alt="golf"
                 width="300"
                 height="300"
-                class="left"
+                class="bounce-hover"
            >
-        </div> 
+        </div>   
         <div>  
-         <p> 
+         <p class="left"> 
            I really enjoy to play and watch the sports listed below.
          </p>  
-           <!-- Below is the first unordered list. The ul belongs to the center class which gives it a border that is centered.-->
-           <ul class="center">
+           <!-- Below is the first unordered list. The ul belongs to the left class which gives it a border that is centered.-->
+           <ul class="left">
             <li>Basketball</li>
             <li>Football(both kinds)</li>
             <li>Pickleball</li>
@@ -99,23 +97,24 @@ File: about.html
            </ul>
         </div>
         </div>
+        <hr> 
         <!-- Replica of the previous section, an unordered list with an image and text-->
         <h2 class="left">Hiking</h2>
         <div>
-        <div style="float: left">    
+        <div style="float: right">    
             <img src="images/rockymnt.jpg"
                  alt="rockymnt"
                  width="300"
                  height="250"
-                 class="left"
+                 class="flip-hover"
             >
         </div>
-        <div style="float: left">    
+        <div style="float: right">    
             <img src="images/bryce.jpg"
                  alt="bryce"
                  width="300"
                  height="250"
-                 class="left"
+                 class="flip-hover"
             >
         </div>
         <div>
@@ -124,7 +123,7 @@ File: about.html
             rockies and saw some beautiful scenery! Here are some national parks and mountains I have visited<br>
             </p>
             <!--Unordered list starts here-->
-            <ul class="center">
+            <ul class="left">
              <li>Rocky mountain national park, CO</li>
              <li>Grand canyon national park, AZ</li>
              <li>Zion national park, UT</li>
@@ -135,22 +134,23 @@ File: about.html
             </ul>
         </div>
         </div>
+        <hr> 
         <h2 class="left">Traveling</h2>
         <div>
-        <div style="float: left">    
+        <div style="float: right">    
             <img src="images/alaska.JPG"
                  alt="alaska"
                  width="300"
                  height="250"
-                 class="left"
+                 class="spin-on-hover"
             >
         </div>
-        <div style="float: left">    
+        <div style="float: right">    
             <img src="images/sanjuan.jpg"
                  alt="sanjuan"
                  width="300"
                  height="250"
-                 class="left"
+                 class="spin-on-hover"
             >
         </div>
         <div>
@@ -158,7 +158,7 @@ File: about.html
             I also enjoy traveling! Here are some places I have been to.<br>
             </p>
             <!--Unordered list starts here-->
-            <ul class="center">
+            <ul class="left">
              <li>Fairbanks, AK</li>
              <li>Montreal, CAN</li>
              <li>Santo Domingo, DR</li>
@@ -169,28 +169,31 @@ File: about.html
             </ul>
         </div>
         </div>
-         <div style="float: left">    
+        <hr> 
+         <div class="image-overlay-container" style="float: right">    
             <img src="images/bosceltics.png"
                  alt="bosceltics"
                  width="300"
                  height="250"
                  class="left"
             >
+            <div class="overlay-text">Go Celtics!</div>
         </div>
-        <div style="float: left">    
+        <div class="image-overlay-container" style="float: right">    
             <img src="images/fall.webp"
                  alt="fall"
                  width="300"
                  height="250"
                  class="left"
             >
+            <div class="overlay-text">Back to School</div>
         </div>
         <div>
             <p>
             To finish up, heres a list of some of my favorite things.<br>
             </p>
             <!--Unordered list starts here-->
-            <ul class="center">
+            <ul class="left">
              <li>Favorite color: Orange</li>
              <li>Favorite animal: Giraffe</li>
              <li>Favorite food: Lasagna</li>
@@ -204,6 +207,7 @@ File: about.html
         <hr>   
     </body>
 </html>
+
 
 
 
