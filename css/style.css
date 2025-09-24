@@ -1,1 +1,180 @@
+/*This is where I set up the background color for the page*/
+body {
+    background-color: rgb(186, 116, 55);
+}
+/*This is for the headers. I used headers in 2 different ways to fit different themes. Each has a different color and
+ size to fit those themes*/
+h1 {
+    color: rgb(205, 185, 114);
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: 20px black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+/*The following affects only the hyperlinks used on the website. The usual blue color felt to generic, so I used brown. 
+The Brown blended in with the purple a bit so I added a border on the links.*/
+a {
+    font-size: 20px;
+    color: brown;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+/*Specifications for paragraph text.*/
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+/*Specifications for unordered list text.*/
+ul {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    border: 4px dashed black;
+    width: max-content;
+}
+/*The following classes are used to help with aligning certain elements. One for right, left, and center each*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.right {
+    display: block;
+    margin-left: auto;
+}
+
+.left {
+    display: block;
+    margin-right: auto;
+}
+/*Used for setting up columns and rows for having text/tables be side by side*/
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.column2 {
+    float: left;
+    width: 30%;
+    padding-left: 65px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Used for indentation*/
+a.indent {
+    padding-right: 20em
+}
+
+/*Used for the links at the top to other pages*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8; /* optional */
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.spin-on-hover {
+  transition: transform 0.6s ease-in-out;
+}
+
+.spin-on-hover:hover {
+  transform: rotate(360deg);
+}
+
+.zoom-in-hover {
+  transition: transform 0.4s ease;
+}
+.zoom-in-hover:hover {
+  transform: scale(1.1);
+}
+.flip-hover {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-hover:hover {
+  transform: rotateY(180deg);
+}
+.image-overlay-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-overlay-container img {
+  display: block;
+  transition: opacity 0.4s;
+}
+
+.image-overlay-container .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  font-size: 1.5em;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.image-overlay-container:hover img {
+  opacity: 0.3;
+}
+
+.image-overlay-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.bounce-hover {
+  transition: transform 0.3s ease;
+}
+.bounce-hover:hover {
+  transform: translateY(-10px);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 5px 5px;
+  border-top: 2px solid #ccc;
+  z-index: 1000; /* Keeps it on top of other content */
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+.bottom-nav a:hover {
+  color: #007BFF;
+}
